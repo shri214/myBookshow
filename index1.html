@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK MY SHOW</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="bookshow.js"></script>  
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="phonestyle.css">
+    <link rel="icon" href="https://course.acciojob.com/acciojob_logo.svg">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="leftside">
+            <div class="logo">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8b466e9f-26b4-4f40-a5ff-7eaa4b314014/dfady0s-54ea7126-3a05-4619-b38f-fb23a2bcb887.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhiNDY2ZTlmLTI2YjQtNGY0MC1hNWZmLTdlYWE0YjMxNDAxNFwvZGZhZHkwcy01NGVhNzEyNi0zYTA1LTQ2MTktYjM4Zi1mYjIzYTJiY2I4ODcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G49pFsWPgF1-5CMAl_jXaxiqZEi_EwMmQ3VnM40CkkY" alt="logo">
+            </div>
+            <div class="searchbar">
+                <span class="material-icons searc">search</span>
+                <input type="text" id="seach-bar" placeholder="Search for Movie Events, Plays, Sports and Activities">
+            </div>
+        </div>
+        <div class="rightside">
+            <div id="city" onclick="popupOfcity()">Kushinagar</div>
+            <div class="btu">
+                <button class="btn" onclick="showH()">Sign in</button>
+            </div>
+            <div class="menu">
+                <div class="menucontainer"onclick="showHide()">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mob">
+            <div class="some">It All Starts Here!</div>
+            <p class="pune">pune</p>
+            <button class="useapp">Use App</button>
+            <span class="material-icons icn">search</span>
+        </div>
+    </nav>
+    <div id="navdown">
+        <div class="list1">
+            <li><a href="#">Movie</a></li>
+            <li><a href="#">Stream</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Plays</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Activities</a></li>
+            <li><a href="#">Buzz</a></li>
+        </div>
+        <div class="list2">
+            <li><a href="#">ListYourShow</a></li>
+            <li><a href="#">Corporates</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Gifts Cards</a></li>
+        </div>
+    </div>
+    <section class="sidemenu" id="myDiv" style="visibility: hidden;">
+        <div class="up">Hey!</div>
+        <div class="mid">
+            <img src="https://img.freepik.com/free-vector/realistic-boxing-day-sale_52683-50362.jpg?w=740&t=st=1676817273~exp=1676817873~hmac=1e4f9fd9832751b47b97e7b92a7506ac9f4269c74162fb0f5553889a5e13a1a4" alt="offer">
+            <p class="unlock">Unlock special offers & great benefits</p>
+            <button class="sbtn">Login/Register</button>
+        </div>
+        <div class="bottm">
+            <div class="noti">
+                <span class="material-icons ic0n">notifications</span>
+                <p>Notification</p>
+            </div>
+            <div class="store">
+                <span class="material-icons ic0n">store</span>
+                <p>Your Order</p>
+                <p class="ne">View your booking and purchase</p>
+            </div>
+            <div class="lib">
+                <span class="material-icons ic0n">video_library</span>
+                <p>Stream Library</p>
+            </div>
+            <div class="credit">
+                <span class="material-icons ic0n">credit_card</span>
+                <p>play Credit Card</p>
+                <p class="ne">view your credit details and offer</p>
+            </div>
+            <div class="help">
+                <span class="material-icons ic0n">help</span>
+                <p>Help & Support</p>
+                <p class="ne">view community and ask</p>
+            </div>
+            <div class="setting">
+                <span class="material-icons ic0n">settings</span>
+                <p>Accounts and Settings</p>
+            </div>
+            <div class="reward">
+                <span class="material-icons ic0n">stars</span>
+                <p>Reward</p>
+            </div>
+        </div>
+    </section>
+    <div class="popbg" id="myPop" style="visibility: hidden;">
+        <section class="cities">
+            <div class="inputitem">
+                <div class="cross" onclick="backToBack()">
+                    <div class="b1"></div>
+                    <div class="b2"></div>
+                </div>
+                 <input type="text" placeholder="Search for your city"> 
+                 <span class="material-icons searching">search</span>
+            </div>
+            <div class="allcities">
+                <span class="popular">popular cities</span>
+                <div class="all">
+                    <div class="item">
+                        <div class="insideitem">
+                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/mumbai.png" alt="mumbai">
+                        </div>
+                        <span class="namecity">Mumbai</span>
+                    </div>
+                    <div class="item">
+                        <div class="insideitem">
+                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/mumbai.png" alt="mumbai">
+                        </div>
+                        <span class="namecity">Mumbai</span>
+                    </div>
+                    <div class="item">
+                        <div class="insideitem">
+                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/mumbai.png" alt="mumbai">
+                        </div>
+                        <span class="namecity">Mumbai</span>
+                    </div>
+                    <div class="item">
+                        <div class="insideitem">
+                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/mumbai.png" alt="mumbai">
+                        </div>
+                        <span class="namecity">Mumbai</span>
+                    </div>
+                    <div class="item">
+                        <div class="insideitem">
+                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/mumbai.png" alt="mumbai">
+                        </div>
+                        <span class="namecity">Mumbai</span>
+                    </div>
+                    <div class="item">
+                        <div class="insideitem">
+                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/mumbai.png" alt="mumbai">
+                        </div>
+                        <span class="namecity">Mumbai</span>
+                    </div>
+                    <div class="item">
+                        <div class="insideitem">
+                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/mumbai.png" alt="mumbai">
+                        </div>
+                        <span class="namecity">Mumbai</span>
+                    </div>
+                    <div class="item">
+                        <div class="insideitem">
+                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/mumbai.png" alt="mumbai">
+                        </div>
+                        <span class="namecity">Mumbai</span>
+                    </div>
+                    <div class="item">
+                        <div class="insideitem">
+                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/mumbai.png" alt="mumbai">
+                        </div>
+                        <span class="namecity">Mumbai</span>
+                    </div>
+                    <div class="item">
+                        <div class="insideitem">
+                            <img src="https://in.bmscdn.com/m6/images/common-modules/regions/mumbai.png" alt="mumbai">
+                        </div>
+                        <span class="namecity">Mumbai</span>
+                    </div>
+                </div>
+                <div class="veiwall">Veiw All Cities</div>
+            </div>
+        </section>
+    </div>
+
+    <section class="signinbar" id="myBox" style="visibility: hidden;">
+        <div class="sing">
+            <div class="frist">
+                <p>Get Started</p>
+                <div class="cross" onclick="backTo()">
+                    <div class="b1"></div>
+                    <div class="b2"></div>
+                </div>
+            </div>
+            <div class="google">
+                <span class="material-icons siconss">mail</span>
+                <p>Continue with Mail</p>
+            </div>
+            <div class="google">
+                <span class="material-icons siconss">mail</span>
+                <p>Continue with Mail</p>
+            </div>
+            <div class="google">
+                <span class="material-icons siconss">mail</span>
+                <p>Continue with Mail</p>
+            </div>
+            <span class="or">OR</span>
+            <div class="num">
+                <img src="https://cdn.pixabay.com/photo/2012/04/10/23/03/india-26828_960_720.png" alt="india">
+                <p>+91</p>
+                <input type="number" minlength="10" maxlength="10" placeholder="Continue with mobile number">
+            </div>
+            <div class="lastline">I agree to the Terms & Conditions & Privacy Policy</div>
+        </div>
+    </section>
+    <!-- <section id="listofmovie">
+        <div class="l1">
+            <div class="rec">Recommended Movies</div>
+        </div>
+        <div class="l2">
+            <div class="m1">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Ant-Man_and_the_Wasp_Quantumania_poster.jpg" alt="Ant-Man">
+            </div>
+            <div class="m1">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Ant-Man_and_the_Wasp_Quantumania_poster.jpg" alt="Ant-Man">
+            </div>
+            <div class="m1">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Ant-Man_and_the_Wasp_Quantumania_poster.jpg" alt="Ant-Man">
+            </div>
+        </div>
+    </section> -->
+</body>
+</html>
